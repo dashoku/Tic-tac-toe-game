@@ -1,0 +1,100 @@
+body {
+  font: 24px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-image:url(https://wallpapercave.com/wp/wp2967398.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+ol, ul {
+  padding-left: 0px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+#status {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #263c9d;
+}
+#status.x:before {
+  background-color: #f44336;
+}
+
+#status.o:before {
+  background-color: #2196f3;
+}
+.square {
+  background: #8cedf8;
+  border: 1px solid #406ce6;
+  border-radius: 5%;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 64px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #f9f111;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 50px;
+}
+button {
+  margin: 5px;
+  border: none;
+  padding: 5px 10px;
+  background-color: #8cedf8;
+  color: #fbff00;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #1976d2;
+}
+
+button:active {
+  background-color: #0d47a1;
+}
+
+#timer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  font-family: monospace;
+  background-color: #c1edf2;
+  padding: 0.5em;
+  border-radius: 0 15% 40% 0 ;
+  color: #666;
+}
